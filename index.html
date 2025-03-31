@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PersonaVault – Discover Yourself</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+  <header>
+    <h1>🔐 PersonaVault</h1>
+    <p>Your personal vault of self-reflection and growth.</p>
+  </header>
+
+  <nav>
+    <button onclick="navigate('home')">🏠 Home</button>
+    <button onclick="navigate('about')">ℹ️ About</button>
+  </nav>
+
+  <main id="view">
+    <!-- Dynamic content loaded here from snippets/*.html -->
+  </main>
+
+  <footer>
+    <p>Made by Benjamin Liles · Powered by imagination + Vanilla JS</p>
+  </footer>
+
+  <script type="module" src="./js/script.js"></script>
+  <script type="module">
+    import { navigate } from './js/router.js';
+    window.navigate = navigate;
+  </script>
+</body>
+</html>

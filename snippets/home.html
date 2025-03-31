@@ -1,0 +1,28 @@
+<section class="home-intro">
+  <h2>Welcome to PersonaVault</h2>
+  <p>Explore versions of yourself. Create, reflect, and unlock who you truly are.</p>
+</section>
+
+<section id="persona-list">
+  <!-- Persona cards will be injected via JS -->
+</section>
+
+<section id="create-persona">
+  <h3>Create a New Persona</h3>
+  <form id="new-persona-form">
+    <input type="text" id="persona-name" placeholder="Name (e.g., Creative Self)" required />
+    <input type="text" id="persona-icon" placeholder="Icon (e.g., 🎨)" maxlength="2" />
+    <div class="form-field">
+      <textarea id="persona-desc" placeholder="Description of this self..." rows="10" cols="65"></textarea>
+    </div>    
+
+    <h4>Traits (max 5)</h4>
+    <div id="traits-container">
+      <input type="text" class="trait-name" placeholder="Trait Name (e.g., Imagination)" />
+      <input type="text" class="trait-prompt" placeholder="Prompt (e.g., What sparks your ideas?)" />
+    </div>
+    <button type="button" id="add-trait">➕ Add Trait</button><br>
+
+    <button type="submit">💾 Save Persona</button>
+  </form>
+</section>
